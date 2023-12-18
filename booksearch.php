@@ -1,6 +1,7 @@
 <?php
     $conn=mysqli_connect('localhost','root','','lbmns');
     if(isset($_GET['searchtext'])){
+    
         $searchtext=$_GET['searchtext'];
         $q="select * from books where authname like '%$searchtext%' or title like '%$searchtext%' or pubname like '%$searchtext%'";
         $result=mysqli_query($conn,$q);
