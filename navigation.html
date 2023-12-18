@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>menu</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .menu ol{
+            list-style: none;
+            display: block;
+        }
+        .menu ol li a{
+            color: #616161;
+            font-size: 17px;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: block;
+            position: relative;
+        }
+        .menu ol li a .fa{
+            padding-right: 10px;
+        }
+        .menu ol li a:before{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background-color: #68AA46;
+            left: 0;
+            top: 0;
+            transition: .3s;
+            opacity: 0;
+        }
+        .menu ol li a:hover, .active{
+            color: #68AA47;
+            background-color: #F5F5F5;
+        }
+        .menu ol li a:hover:before{
+            opacity: 1;
+        }
+
+    </style>
+<body>
+    <div class="menu">
+        <ol>
+            <li><a href="welcome.html" target="output"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="bookdataentry.php" target="output"><i class="fa fa-book"></i>Book Dataentry</a></li>
+            <li><a href="member.php" target="output"><i class="fa fa-user"></i>Member Details</a></li>
+            <li><a href="issuereturn.php" target="output"><i class="fa fa-forward"></i>Issue return</a></li>
+            <li><a href="booksearch.php" target="output"><i class="fa fa-search"></i>Report </a></li>
+        </ol>
+    </div>
+</body>
+</html>
